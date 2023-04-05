@@ -39,6 +39,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     padding: 2rem 7%;
     background: transparent;
@@ -207,6 +208,7 @@ section {
 }
 
 @keyframes professionRotate {
+    
     0%, 20% {
         transform: rotate(0deg);
     }
@@ -563,6 +565,26 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }   
+.contact-me a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2.5rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.contact .contact-me a:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
 
 footer {
     display: flex;
@@ -721,7 +743,7 @@ footer {
         color: var(--text-color);
      }
 
-     .navbar a active {
+     .navbar a .active {
         color: var(--main-color);
      }
 
@@ -785,6 +807,10 @@ footer {
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-220px, -335px);
+    }
+
+    .contact form .input-box input {
+        width: 100%;
     }
 
     .home .profession-box .circle {
@@ -860,19 +886,19 @@ footer {
         }
 
         .home .profession-box .profession:nth-child(1){
-            transform: rotate(-90deg) translate(-110px, -220px);
+            transform: rotate(-90deg) translate(-80px, -250px);
         }
 
         .home .profession-box .profession:nth-child(2){
-            transform: rotate(0deg) translate(5px, -335px);
+            transform: rotate(0deg) translate(5px, -325px);
         }
         
         .home .profession-box .profession:nth-child(3){
-            transform: rotate(90deg) translate(-105px, -440px);
+            transform: rotate(90deg) translate(-100px, -435px);
         }
 
         .home .profession-box .profession:nth-child(4){
-            transform: rotate(180deg) translate(-210px, -335px);
+            transform: rotate(180deg) translate(-232px, -330px);
         }
 
         .contact form .input-box input {
